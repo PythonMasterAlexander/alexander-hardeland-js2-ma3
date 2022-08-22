@@ -3,17 +3,18 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Javascript2 course Module Assignment 3 delivery">
+    <meta name="description" content="Javascript2 course Module Assignment 3 delivery. Login page">
 
     <link href="./styles/style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b06e8bfbf3.js" crossorigin="anonymous"></script>
+    <script src="./scripts/index.js" defer></script>
 
     <title>Javascript2 course Module Assignment 3 delivery</title>
   </head>
   <body>
     <header>
       <section>
-        <h1>Home</h1>
+        <h1>Log in</h1>
       </section>
       <nav>
         <a href="./index.html">Home</a>
@@ -22,6 +23,18 @@
       </nav>
     </header>
     <main>
+      <form id="login-page-form-container">
+        <legend>Log in</legend>
+        <div>
+          <label for="username">Username</label>
+          <input id="username" type="text" name="username">
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input id="password" type="text" name="password">
+        </div>
+        <button>Continue</button>
+      </form>
     </main>
     <footer>
       <section>
