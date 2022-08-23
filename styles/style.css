@@ -4,8 +4,16 @@ label {
 h1 {
   color: blue; }
 
+form {
+  max-width: 400px; }
+
+form {
+  margin: 30px auto;
+  max-width: 300px; }
+
 input {
   border: solid black 2px;
+  display: block;
   height: 40px;
   width: 300px; }
 
@@ -19,3 +27,7 @@ html {
 
 :root {
   font-size: 16px; }
+
+.message-fail {
+  background: red;
+  color: white; }
