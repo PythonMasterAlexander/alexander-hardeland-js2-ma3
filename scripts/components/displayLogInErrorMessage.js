@@ -3,6 +3,7 @@ const createSpanElement = function(message, messageStyleClass) {
 
   spanElement.classList.add(messageStyleClass);
   spanElement.innerText = message;
+
   return spanElement;
 };
 
