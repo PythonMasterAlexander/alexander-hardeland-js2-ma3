@@ -1,7 +1,7 @@
 import displayJsonOnPage from './components/displayJsonOnPage.js';
 import { baseUrl, mainSectionCryptoContainer } from './constants/constant.js';
 
-const pageProductsUrl = baseUrl + "products";
+const pageProductsUrl = baseUrl + "cryptos";
 
 //use  Immediately Invoked Function Expression to call async function at once
 (async function() {
@@ -13,7 +13,7 @@ const pageProductsUrl = baseUrl + "products";
 
     const dataFromJson = json.data;
     for(let i = 0; i < dataFromJson.length; i++) {
-      const nameData = dataFromJson[i].attributes.name;
+      const nameData = dataFromJson[i].attributes.title;
       const priceData = dataFromJson[i].attributes.price;
       const descriptionData = dataFromJson[i].attributes.description;
 
