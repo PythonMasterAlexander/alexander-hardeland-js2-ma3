@@ -1,3 +1,12 @@
+let hrefAttributeValue = "crypto.html?id=${product.id}";
+
+const createLinkElement = function(attributeValue) {
+  const linkElement = document.createElement('a');
+  linkElement.setAttribute("href", attributeValue)
+
+  return linkElement;
+};
+
 const displayJsonOnPage = function(parentElement, nameContent, priceContent, descriptionContent) {
   const nameContentElement = document.createElement('h2');
   nameContentElement.innerText = nameContent; 

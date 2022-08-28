@@ -26,6 +26,8 @@ console.log(params.get("name"));
     const json = await response.json();
 
     const dataFromJson = json.data;
+    mainSectionCryptoContainer.replaceChildren();
+
     for(let i = 0; i < dataFromJson.length; i++) {
       const nameData = dataFromJson[i].attributes.title;
       const priceData = dataFromJson[i].attributes.price;
