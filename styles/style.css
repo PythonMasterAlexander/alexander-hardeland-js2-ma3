@@ -1,15 +1,16 @@
-label {
-  display: block; }
+body {
+  max-width: 90%;
+  margin: 0 auto; }
 
-h1 {
-  color: blue; }
-
-form {
-  max-width: 400px; }
+fieldset {
+  border: solid 2px black; }
 
 form {
   margin: 30px auto;
   max-width: 300px; }
+
+fieldset {
+  padding: 20px; }
 
 input {
   border: solid black 2px;
@@ -17,8 +18,34 @@ input {
   height: 40px;
   width: 300px; }
 
+.username__container, .password__container {
+  margin: 30px auto; }
+
 footer {
-  flex-shrink: 0; }
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+h1, h2, footer span {
+  font-family: 'Noto Serif', serif;
+  font-size: 1.7rem; }
+
+footer h2, footer span {
+  font-size: 1.2rem; }
+
+a {
+  text-decoration-line: none; }
+
+label {
+  display: block;
+  padding-bottom: 5px; }
+
+legend {
+  font-size: 1.2rem; }
 
 html {
   box-sizing: border-box; }
