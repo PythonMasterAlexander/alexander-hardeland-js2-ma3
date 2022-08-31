@@ -9,14 +9,16 @@
     <script src="https://kit.fontawesome.com/b06e8bfbf3.js" crossorigin="anonymous"></script>
     <script src="./scripts/index.js" type="module" defer></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+
     <title>Javascript2 course Module Assignment 3 delivery</title>
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <section>
-          <h1>Log in</h1>
-        </section>
+        <h1>Log in</h1>
         <nav>
           <a href="./index.html">Home</a>
           <a href="./login.html">Log in</a>
@@ -25,20 +27,22 @@
       </header>
       <main>
         <form id="login-page-form-container">
-          <legend>Log in</legend>
-          <section class="input-section">
-            <div class="input-section__display-message-container">
-            </div>
-            <div>
-              <label for="username">Username</label>
-              <input id="username" type="text" name="username">
-            </div>
-            <div>
-              <label for="password">Password</label>
-              <input id="password" type="text" name="password">
-            </div>
-          </section>
-          <button>Continue</button>
+          <fieldset>
+            <legend>Log in</legend>
+            <section class="input-section">
+              <div class="input-section__display-message-container">
+              </div>
+              <div class=username__container>
+                <label for="username">Username</label>
+                <input id="username" type="text" name="username">
+              </div>
+              <div class="password__container">
+                <label for="password">Password</label>
+                <input id="password" type="text" name="password">
+              </div>
+            </section>
+            <button>Continue</button>
+          </fieldset>
         </form>
       </main>
     </div>

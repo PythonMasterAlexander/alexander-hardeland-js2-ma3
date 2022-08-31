@@ -1,13 +1,10 @@
-label {
-  display: block;
+body {
+  max-width: 90%;
+  margin: 0 auto;
 }
 
-h1 {
-  color: blue;
-}
-
-form {
-  max-width: 400px;
+fieldset {
+  border: solid 2px black;
 }
 
 form {
@@ -15,9 +12,17 @@ form {
   max-width: 300px;
 }
 
+fieldset {
+  padding: 20px;
+}
+
 input {
   border: solid black 2px;
   display: block;
   height: 40px;
   width: 300px;
+}
+
+.username__container, .password__container {
+  margin: 30px auto;
 }
