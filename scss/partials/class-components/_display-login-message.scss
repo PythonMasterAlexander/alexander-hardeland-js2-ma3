@@ -2,4 +2,9 @@
 .message-fail {
   background: hsla(0, 100%, 50%, 1);
   color: hsla(185, 0%, 100%, 1);
+  display: block;
+}
+
+.input-section__display-message-container {
+  height: 30px;
 }

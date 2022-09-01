@@ -1,3 +1,12 @@
+nav {
+  margin-top: 10px; }
+
+@media (max-width: 540px) {
+  header h1 {
+    font-size: 1.3rem; }
+  header a {
+    font-size: 0.8rem; } }
+
 body {
   max-width: 90%;
   margin: 0 auto; }
@@ -18,7 +27,7 @@ input {
   height: 40px;
   width: 300px; }
 
-.username__container, .password__container {
+.username__container {
   margin: 30px auto; }
 
 footer {
@@ -26,6 +35,15 @@ footer {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px; }
+
+@media (max-width: 540px) {
+  footer {
+    flex-direction: column; }
+  footer section {
+    margin-bottom: 10px;
+    text-align: center; }
+  footer section h2, footer section span {
+    font-size: 0.9rem; } }
 
 body {
   font-family: 'Open Sans', sans-serif; }
@@ -39,6 +57,9 @@ footer h2, footer span {
 
 a {
   text-decoration-line: none; }
+
+header a {
+  color: black; }
 
 label {
   display: block;
@@ -71,4 +92,8 @@ body {
 
 .message-fail {
   background: red;
-  color: white; }
+  color: white;
+  display: block; }
+
+.input-section__display-message-container {
+  height: 30px; }
