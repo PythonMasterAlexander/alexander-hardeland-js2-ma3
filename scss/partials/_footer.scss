@@ -4,3 +4,18 @@ footer {
   justify-content: space-between;
   margin-bottom: 20px;
 }
+
+@media (max-width: 540px) {
+  footer {
+    flex-direction: column;
+  }
+
+  footer section {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  footer section h2, footer section span {
+    font-size: 0.9rem;
+  }
+}
