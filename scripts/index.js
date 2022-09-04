@@ -3,6 +3,7 @@ import displayLogInErrorMessage from './components/displayLogInErrorMessage.js';
 const formElement = document.querySelector('#login-page-form-container');
 const errorMessageContainer = document.querySelector('.input-section__display-message-container');
 
+const userNameAndPasswordLength = 2;
 
 const validateLogInPageForm = function() {
   event.preventDefault();
@@ -11,9 +12,10 @@ const validateLogInPageForm = function() {
   const userName = formElement.username.value.trim();
   const password = formElement.password.value.trim();
 
-  console.log("hello");
-  if(userName.length === 0 || password.length === 0) {
-    displayLogInErrorMessage(errorMessageContainer, 'It works', 'message-fail');
+  errorMessageContainer.replaceChildren();
+
+  if (userName.length <= userNameAndPasswordLength || password.length <= userNameAndPasswordLength) {
+    return displayLogInErrorMessage(errorMessageContainer, 'Invalid username or password', 'message-fail');
   }
 };
 

@@ -1,10 +1,10 @@
-//Todo, find out how to create a propper button
 .message-fail {
   background: hsla(0, 100%, 50%, 1);
   color: hsla(185, 0%, 100%, 1);
   display: block;
+  padding: 10px;
 }
 
 .input-section__display-message-container {
-  height: 30px;
+  background: white;
 }
